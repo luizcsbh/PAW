@@ -1,0 +1,28 @@
+/*************************** Configurando estilo***************************/
+body{
+	
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	
+}
+
+header{
+	text-align: center;
+}
+
+table{
+	width: 920px;
+	border-collapse: separate;	
+}
+
+th{
+	text-align: left;
+}
+
+th,td{
+	
+	padding: 7px;
+}
+
+dt{
+	font-weight: bold;
+}
