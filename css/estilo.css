@@ -2,20 +2,62 @@
 body{
 	
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	
+	background-color: #CEF6F5;
 }
-
+#conteudo{
+	width: 50%;
+	float: left;
+}
+#conteudo-secundario{
+	width: 50%;
+	float:center;
+}
+img.img-foto{
+	width: 40%;
+	height: 20%;
+}
+div.figura {
+  float: left;
+  width: 25%;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+div.figura p {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+}
 header{
 	text-align: center;
 }
 
 table{
-	width: 920px;
+	width: auto;
 	border-collapse: separate;	
 }
 
+caption{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+tr.alternado{
+	background-color: #efefef;
+}
+
 th{
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	
 	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em;
+}
+
+td{
+	border-top: 1px solid #999;
 }
 
 th,td{
@@ -23,6 +65,3 @@ th,td{
 	padding: 7px;
 }
 
-dt{
-	font-weight: bold;
-}
