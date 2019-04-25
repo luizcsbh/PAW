@@ -26,3 +26,10 @@ th,td{
 dt{
 	font-weight: bold;
 }
+
+.mini-foto{
+    width: 40px;
+    padding: 5px;
+    margin: 5px;
+   
+}
