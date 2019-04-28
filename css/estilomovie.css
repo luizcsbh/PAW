@@ -21,7 +21,7 @@
 	}
 }
 
-@media (max-width:767px){
+@media screen and (max-width:767px){
   	/*Definições de estilos*/
     .table-responsive {
         display: block;
@@ -62,6 +62,8 @@
 /* Configurando o body */
 body{
 	background: #007fc7;
+	
+
 }
 		
 .container{
@@ -72,6 +74,88 @@ body{
     width: auto;
 }
 
+/* Limpa o float tanto direita iu esquerda */
+.clear{
+	clear: both;
+}
+
+/* Alinhamento de conteudo */
+.alinhamento-conteudo{
+	align-content: center;
+	
+}
+
+/* Estilizando imagens*/
+.imagem{
+	
+	display: block;
+	height: 419px;
+	margin: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	width: auto;		
+}
+
+
+/* Configurando galeria*/
+.galeria{
+	border: 2px black solid;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-top: auto;
+	padding: 0.1em;
+	padding-bottom: 0.1em;	
+}
+
+.imagem-galeria{
+	
+	display: block;
+	margin: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	width: auto;		
+}
+
+/* formataçao do texto que servirá como legenda para as imagens */
+.legenda{
+	font-weight: normal;
+    margin: 2px;
+    text-align: center;
+	width: 117px; /* define o tamanho da área em que será exibida a legenda -
+			se o valor for menor que a quantidade de caracteres, 
+			ocorre uma quebra de linha */
+}
+
+.thumbnails {
+	float: left;
+	margin-right: 1em;
+}
+
+.img-big{
+	
+	image-resolution: from-image;
+	width: 60%;
+}
+
+/* Configurando video */
+
+video{
+	height: auto;
+	width: 50%;
+	
+	
+}
+
+.movie{
+	background-size: cover; 
+	bottom: 0;
+	min-height: 100%;
+	min-width: 100%; 
+	right: 0; 
+	
+}
 /* Configurando tabelas*/
 		
 header{
@@ -113,30 +197,32 @@ th,td{
 	padding: 7px; 
 }
 
-/* Configurando textos */
+/* Configurando t´tulos */
 
 h2{
 	text-align: center;
 }
 
 /* Configurando imagens*/
-
 div.thumbnail{
 	border: 1px solid #000000;
-    float: left; /* alinhamento a esquerda */
+    float: left;  /* alinhamento a esquerda */
     font-family: Arial;
 	font-size: 12px;
-    height: auto;
     margin: 2px;
+	max-width: 100%;
 	text-align: center; /* texto da legenda alinhado no centro */
-    width: auto;
+    
 }
+
+
 
 /* formatação das imagens */
 div.thumbnail img{
  	border: 1px solid #ffffff;
-    float: left;
+    float: none;
  	margin: 3px;
+	
 }
 
 /* uma borda será exibida quando passar o mouse sobre a imagem */
@@ -144,13 +230,11 @@ div.thumbnail a:hover img {
 	border: 1px solid #000000
 }
 
-/* formataçao do texto que servirá como legenda para as imagens */
-.legenda{
-	font-weight: normal;
-    margin: 2px;
-    text-align: center;
-	width: 110px; /* define o tamanho da área em que será exibida a legenda -
-			se o valor for menor que a quantidade de caracteres, 
-			ocorre uma quebra de linha */
+footer{
+	list-style-type:  bold;
+	text-align: center;
+	
+	
 }
+
 

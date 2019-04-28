@@ -21,14 +21,7 @@ body{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background-color: #CEF6F5;
 }
-#conteudo{
-	width: 50%;
-	float: left;
-}
-#conteudo-secundario{
-	width: 50%;
-	float:right;
-}
+
 img.img-foto{
 	width: 20%;
 	height: 10%;
@@ -49,34 +42,34 @@ div.figura p {
 
 .galeria{
 	
-	width: 720px;
-	height: 450px;
+	width: 920px;
+	height: 620px;
 	border: thin black solid;
-	margin-top: 0.1em;
 	padding-bottom: 0.1em;
-	margin: 0.1em;
-	padding: 0.1em;
+	margin: 0.5em;
+	padding: 0.5em;
 
+}
+
+.clear{
+	clear: both;
 }
 
 .thumbnails {
 	float: left;
-	margin-right: 3em;
+	margin-right: 1em;
 }
 
 .imagem-pequena{
 	
-	width: 80%;
+	width: 100%;
 	border: thin silver solid;
 }
 
 .imagem-grande{
 	
-	width: 300px;
-	height: 200px;
-	border: thin silver solid;
-  	margin: 2px;
-  	padding: 2px;
+	background-size:1330px 1200px;	
+  
 }
  
 
