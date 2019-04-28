@@ -45,7 +45,6 @@
         float: left;
      } 
      .table-responsive tbody {
-       	-webkit-overflow-scrolling: touch;
 		overflow-x: auto; 
 		position: relative;
 		white-space: nowrap;
@@ -61,9 +60,7 @@
 
 /* Configurando o body */
 body{
-	background: #007fc7;
-	
-
+	background: url(../imagens/fundo-verde.jpg) no-repeat top;
 }
 		
 .container{
@@ -144,8 +141,16 @@ body{
 video{
 	height: auto;
 	width: 50%;
-	
-	
+}
+figure{
+	margin: 0 auto;
+	min-width: 320px;
+	width: 50%;
+}
+
+figcaption{
+	font: 120% sans-serif; 
+	text-align: center;
 }
 
 .movie{
@@ -230,11 +235,12 @@ div.thumbnail a:hover img {
 	border: 1px solid #000000
 }
 
+/* Configurando rodapé */
 footer{
-	list-style-type:  bold;
-	text-align: center;
-	
-	
+	color: white;
+	font-weight: bold;
+	position: relative;	
+	text-align: center;	
 }
 
 
