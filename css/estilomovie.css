@@ -60,7 +60,7 @@
 
 /* Configurando o body */
 body{
-	background: url(../imagens/fundo-verde.jpg) no-repeat top;
+	background: url(../imagens/fundo-verde.jpg);
 }
 		
 .container{
@@ -131,8 +131,6 @@ body{
 }
 
 .img-big{
-	
-	image-resolution: from-image;
 	width: 60%;
 }
 
