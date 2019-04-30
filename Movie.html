@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="pt-br">
 
 <head>
@@ -46,7 +46,7 @@
 					<td class="alternado">169 minutos</td>
 					<td>Estados Unidos da Am&eacute;rica e Nova Zel&acirc;ndia</td>
 					<td class="alternado">Fantasia e Aventura</td>
-					<td>N&atilde;o recomendado para menores de 12 anos</td>
+					<td>N&atilde;o recomendado para menores de <p class="alt">12</p></td>
 					<td class="alternado">Peter Jackson</td>
 				</tr>
 				<!--Fim do tr-->
@@ -337,25 +337,28 @@
 
 		<h2>Galeria</h2>
 		<div class="galeria">
-			<div class="thumbnails">
-				<img class="imagem-galeria" src="imagens/imagem1.jpg" alt="">
+			<div class="imagem-galeria">
+				<img src="imagens/imagem1.jpg" alt="">
+			</div>
+			<!--Fim div thumbnails-->
+			
+			<div class="imagem-galeria">
+				<img src="imagens/imagem2.jpg" alt="">
+			</div>
+			<!--Fim div thumbnails-->
+			
+			<div class="imagem-galeria" >
+				<img src="imagens/visual-companion-the-hobbit-an-unexpected-journey.jpg" alt="">
 			</div>
 			<!--Fim div thumbnails-->
 			<div class="clear"></div>
-			<div class="thumbnails">
-				<img class="imagem-galeria" src="imagens/imagem2.jpg" alt="">
+			<div class="container-image">
+				<img src="imagens/poster2.jpg" width="700" height="400" alt="">
 			</div>
-			<!--Fim div thumbnails-->
-			<div class="clear"></div>
-			<div class="thumbnails">
-				<img class="imagem-galeria" src="imagens/imagem3.jpg" alt="">
-			</div>
-			<!--Fim div thumbnails-->
-			<img class="img-big" src="imagens/imagem1.jpg" alt="">
 		</div>
 		<!--Fim div galeria-->
 		<h2>Trailers</h2>
-		<figure class="thumbmails">
+		<figure>
 			<video controls="controls" class="movie">
 				<source src="videos/trailler1.mp4" type="video/mp4">
 			</video>
@@ -366,7 +369,7 @@
 			<!--figcaptione -->
 		</figure>
 		<!--Fim do figure -->
-		<figure class="alinhamento-conteudo">
+		<figure>
 			<video controls="controls" class="movie">
 				<source src="videos/trailler2.mp4" type="video/mp4">
 			</video>
@@ -379,11 +382,11 @@
 		<!--Fim do figure -->
 
 		<div class="clear"></div>
-		<div class="alinhamento-conteudo">
+		<div>
 			<h2>Poster</h2>
-			<img class="imagem" src="imagens/poster2.jpg" alt="">
+			<img class="imagem" src="imagens/poster1.jpg" alt="">
 		</div>
-		<!--Fim da div alinhamento-conteudo-->
+		<!--Fim da div-->
 	</div>
 	<!--Fim da div conteiner-->
 	<footer>
@@ -392,8 +395,8 @@
 	</p>
 	
 	</footer>
+	<script src="scripts/main.js"></script>
 </body>
 <!--Fim do body-->
-
 </html>
 <!--Fim do html-->
