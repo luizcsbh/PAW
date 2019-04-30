@@ -64,7 +64,7 @@ body{
 }
 		
 .container{
-	background: #FFF;
+	background: #e6ffe6;
     float: none;
 	margin: 20px auto;
 	padding: 20px;
@@ -86,7 +86,7 @@ body{
 .imagem{
 	
 	display: block;
-	height: 419px;
+	height: auto;
 	margin: 2px;
 	margin-left: auto;
 	margin-right: auto;
@@ -106,8 +106,8 @@ body{
 }
 
 .imagem-galeria{
-	
 	display: block;
+	height: auto;
 	margin: 2px;
 	margin-left: auto;
 	margin-right: auto;
@@ -140,8 +140,10 @@ video{
 	height: auto;
 	width: 50%;
 }
+
 figure{
-	margin: 0 auto;
+	float: left;
+	letter-spacing: 0.1em;
 	min-width: 320px;
 	width: 50%;
 }
@@ -157,11 +159,10 @@ figcaption{
 	min-height: 100%;
 	min-width: 100%; 
 	right: 0; 
-	
 }
-/* Configurando tabelas*/
-		
-header{
+
+/* Configurando tabelas*/	
+header, h2{
 	text-align: center;
 }
 
@@ -182,13 +183,11 @@ th.alternado,td.alternado{
 }
 
 th{
-	
 	border-top: 1px solid #999;
 	font-size: 90%;
 	letter-spacing: 0.1em;
 	text-align: left;
 	text-transform: uppercase;
-	
 }
 
 td{
@@ -200,12 +199,6 @@ th,td{
 	padding: 7px; 
 }
 
-/* Configurando t´tulos */
-
-h2{
-	text-align: center;
-}
-
 /* Configurando imagens*/
 div.thumbnail{
 	border: 1px solid #000000;
@@ -214,28 +207,24 @@ div.thumbnail{
 	font-size: 12px;
     margin: 2px;
 	max-width: 100%;
-	text-align: center; /* texto da legenda alinhado no centro */
-    
+	text-align: center; /* texto da legenda alinhado no centro */  
 }
-
-
 
 /* formatação das imagens */
 div.thumbnail img{
  	border: 1px solid #ffffff;
     float: none;
  	margin: 3px;
-	
 }
 
 /* uma borda será exibida quando passar o mouse sobre a imagem */
 div.thumbnail a:hover img {
-	border: 1px solid #000000
+	border: 1px solid #809fff;
 }
 
 /* Configurando rodapé */
 footer{
-	color: white;
+	color: #ffffff;
 	font-weight: bold;
 	position: relative;	
 	text-align: center;	
