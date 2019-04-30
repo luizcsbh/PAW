@@ -48,9 +48,7 @@
 		overflow-x: auto; 
 		position: relative;
 		white-space: nowrap;
-		width: auto;
-      
-        
+		width: auto;   
      }  
      .table-responsive tbody tr {
         display: inline-block;
@@ -93,8 +91,6 @@ body{
 	max-width: 100%;
 	width: auto;		
 }
-
-
 /* Configurando galeria*/
 .galeria{
 	border: 2px black solid;
@@ -106,7 +102,6 @@ body{
 }
 
 .imagem-galeria{
-	
 	display: block;
 	margin: 2px;
 	margin-left: auto;
@@ -187,8 +182,7 @@ th{
 	font-size: 90%;
 	letter-spacing: 0.1em;
 	text-align: left;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 }
 
 td{
@@ -214,18 +208,14 @@ div.thumbnail{
 	font-size: 12px;
     margin: 2px;
 	max-width: 100%;
-	text-align: center; /* texto da legenda alinhado no centro */
-    
+	text-align: center; /* texto da legenda alinhado no centro */  
 }
-
-
 
 /* formatação das imagens */
 div.thumbnail img{
  	border: 1px solid #ffffff;
     float: none;
  	margin: 3px;
-	
 }
 
 /* uma borda será exibida quando passar o mouse sobre a imagem */
