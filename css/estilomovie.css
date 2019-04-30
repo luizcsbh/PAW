@@ -55,6 +55,11 @@
      }
 }
 
+/* CSS Reset */
+*{
+	margin: 0;
+	padding: 0;  
+}
 
 /* Configurando o body */
 body{
@@ -62,11 +67,17 @@ body{
 }
 		
 .container{
-	background: #FFF;
+	background: #e6ffe6;
     float: none;
 	margin: 20px auto;
 	padding: 20px;
     width: auto;
+}
+
+.container-image{
+	background: blue;
+    border: 3px solid gray;
+	width: 700px;
 }
 
 /* Limpa o float tanto direita iu esquerda */
@@ -74,21 +85,14 @@ body{
 	clear: both;
 }
 
-/* Alinhamento de conteudo */
-.alinhamento-conteudo{
-	align-content: center;
-	
-}
-
 /* Estilizando imagens*/
 .imagem{
-	
 	display: block;
-	height: 419px;
+	height: auto;
 	margin: 2px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 100%;
+	max-width: 60%;
 	width: auto;		
 }
 /* Configurando galeria*/
@@ -98,18 +102,28 @@ body{
 	margin-right: auto;
 	margin-top: auto;
 	padding: 0.1em;
-	padding-bottom: 0.1em;	
+	padding-bottom: 0.1em;
 }
 
+/* Configurando imagem-galeria */
 .imagem-galeria{
-	display: block;
-	margin: 2px;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 100%;
-	width: auto;		
+	height: 200px;
+	margin: 10px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 300px;		
 }
 
+.imagem-galeria img{
+	height: 200px;
+	width: 300px;
+}
+
+.img-big{
+	height: 200%;
+	width: 200%;
+}
 /* formataçao do texto que servirá como legenda para as imagens */
 .legenda{
 	font-weight: normal;
@@ -125,38 +139,38 @@ body{
 	margin-right: 1em;
 }
 
-.img-big{
-	width: 60%;
-}
-
 /* Configurando video */
 
 video{
 	height: auto;
 	width: 50%;
 }
+
 figure{
-	margin: 0 auto;
-	min-width: 320px;
-	width: 50%;
+	display: block;
+	letter-spacing: 0.5em;
+	margin: 20px auto;
+	min-width: 300px;
+	width: 50%;	
 }
 
 figcaption{
-	font: 120% sans-serif; 
+	font: 100% sans-serif; 
 	text-align: center;
 }
 
 .movie{
+	
 	background-size: cover; 
 	bottom: 0;
 	min-height: 100%;
 	min-width: 100%; 
 	right: 0; 
-	
 }
-/* Configurando tabelas*/
-		
-header{
+
+/* Configurando tabelas*/	
+header, h2{
+	margin: 20px auto;
 	text-align: center;
 }
 
@@ -177,12 +191,12 @@ th.alternado,td.alternado{
 }
 
 th{
-	
 	border-top: 1px solid #999;
 	font-size: 90%;
 	letter-spacing: 0.1em;
 	text-align: left;
 	text-transform: uppercase;	
+	
 }
 
 td{
@@ -192,12 +206,6 @@ td{
 th,td{
 	
 	padding: 7px; 
-}
-
-/* Configurando t´tulos */
-
-h2{
-	text-align: center;
 }
 
 /* Configurando imagens*/
@@ -220,15 +228,27 @@ div.thumbnail img{
 
 /* uma borda será exibida quando passar o mouse sobre a imagem */
 div.thumbnail a:hover img {
-	border: 1px solid #000000
+	border: 1px solid #809fff;
 }
 
 /* Configurando rodapé */
 footer{
-	color: white;
+	color: #ffffff;
 	font-weight: bold;
 	position: relative;	
 	text-align: center;	
 }
 
+.alt{
+	background: #ffd700;
+	border: 2px solid #ffd700;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px #ffd700;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 3px 10px;
+	text-align: center;
+}
 
