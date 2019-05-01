@@ -42,11 +42,6 @@
     
  }
 	
-/* CSS Reset */
-*{
-	margin: 0;
-	padding: 0;  
-}
 
 /* Configurando o body */
 body{
@@ -180,32 +175,6 @@ p{
 	margin: 0 0 1em 0;
 	padding: 1em .5em;
 	text-align: center;	
-}
-
-/* Formatação de videos*/
-
-figure.movie{
-	border: 8px solid white;
-	box-shadow: 1px 1px 4px black;
-	float: left;
-	padding-bottom: 20px;
-	
-}
-
-
-figure.movie video{
-	height:100%;
-	width: 100%;
-}
-
-figure.movie figcaption{
-	background-color: rgba(0,0,0, 0.4);
-	color: white;
-	font-size: 15px;
-	font-weight: bold;
-	height: 100%;
-	margin: 3px;
-	text-align: center;
 }
 
 /* Formatação de imagens com legendas */
