@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	@media screen and (min-width:481px){
+	/*Definições de estilos*/
+	
+	
+	.list-action dl {
+	  border-bottom: 1px solid #dddddd;
+	}
+	
+	.list-action dd {
+	  border: 0;
+	}
+	.list-action dd:not(:first-child) {
+	  display: block;
+	}
+}
+
+@media screen and (max-width:767px){
+  	/*Definições de estilos*/
+    .list-responsive {
+        display: block;
+        position: relative;
+        width: 100%;
+     }
+
+   
+     .list-responsive dl,
+     .list-responsive dd,
+     .list-responsive dt {
+        display: block;
+     }
+
+     .list-responsive dd,
+     .list-responsive dt {
+        height: 35px;
+     } 
+    
+ }
+	
+
+		
+		
+	.alt{
+	background: #ffd700;
+	border: 2px solid #ffd700;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px #ffd700;
+	color: #ffffff;
+	display: inline-block;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 3px 10px;
+	text-align: center;
+}
+	
+
+	.com-bordas dt {
+		background-color: #131210;
+		color: #959289;
+		padding: .5em .5em;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		border-left: 2px solid #131210;
+		border-right: 2px solid #131210;
+		border-top: 2px solid #131210;
+		}
+
+	.com-bordas dd {
+		margin: 0 0 1em 0;
+		background: #DBD8D8;
+		text-align: center;
+		padding: 1em .5em;
+		font-style: italic;
+		border-left: 1px solid #131210;
+		border-right: 1px solid #131210;
+		border-bottom: 1px solid #131210;
+		}
+		.bandeira{
+			height: 20px;
+			widows: 20px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+
+	<dl class="com-bordas">
+		<caption>Ficha Completa do Filme</caption>
+		<dt>
+			T&iacute;tulo Original
+		</dt>
+		<dd lang="en">
+			The Hobbit: An Unexpected Journey
+		</dd>
+		<dt>
+			Estreia
+		</dt>
+		<dd>
+			14 de Dezembro de 2012 (Brasil)
+		</dd>
+		<dt>
+			Dura&ccedil;&atilde;o
+		</dt>
+		<dd>
+			169 minutos
+		</dd>
+		<dt>
+			Pa&iacute;es de origem
+		</dt>
+		<dd>
+			<img class="bandeira" src="imagens/Flag_of_the_United_States.png" alt="Estados Unidos da América">Estados Unidos da Am&eacute;rica <img class="bandeira" src="imagens/Flag_of_the_new_zealand.png" alt="">Nova Zel&acirc;ndia
+		</dd>
+
+		<dt>
+			G&ecirc;nero
+		</dt>
+		<dd>
+			Fantasia e Aventura
+		</dd>
+		<dt>
+			Recomenda&ccedil;&atilde;o de idade
+		</dt>
+		<dd>
+			N&atilde;o recomendado para menores de <p class="alt">12</p>
+		</dd>
+		<dt>
+			Diretor
+		</dt>
+
+		<dd>
+			Peter Jackson
+		</dd>
+	</dl>
+	<!--Fim do dl-->
+
+</body>
+
+</html>
