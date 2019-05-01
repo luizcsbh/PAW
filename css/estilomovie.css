@@ -1,5 +1,6 @@
 /*************************** Configurando estilo***************************/
 
+
 /* Smartfones e dispositivos de tela pequenas*/
 
 
@@ -49,7 +50,8 @@
 
 /* Configurando o body */
 body{
-	background: url(../imagens/fundo-verde.jpg);
+	background: url(../imagens/fundo-verde.jpg); /*imagem de fundo*/
+	font-family: "Trebuchet MS", Helvetica, sans-serif;/*fontes para o web site*/
 }
 		
 .container{
@@ -58,11 +60,6 @@ body{
 	margin: 20px auto;
 	padding: 20px;
     width: auto;
-}
-
-.container-image{
-	background: blue;
-  	width: 700px;
 }
 
 /* Limpa o float tanto direita iu esquerda */
@@ -82,113 +79,37 @@ body{
 }
 /* Configurando galeria*/
 .galeria{
-	border: 2px black solid;
-	margin-bottom: auto;
-	margin-right: auto;
-	margin-top: auto;
+	
+	float: left;
 	padding: 0.1em;
-	padding-bottom: 0.1em;
 }
 
 /* Configurando imagem-galeria */
-.imagem-galeria{
-	height: 200px;
-	margin: 10px;
+.imagem-galeria img{
+	height: 120px;
+	margin: 12px;
 	margin-bottom: 5px;
 	margin-left: 5px;
 	margin-top: 5px;
-	width: 300px;		
+	width: 190px;		
 }
 
-.imagem-galeria img{
-	height: 200px;
-	width: 300px;
-}
 
+
+/* Confiuração de imagem grande*/
 .img-big{
-	height: 200%;
-	width: 200%;
-}
-/* formataçao do texto que servirá como legenda para as imagens */
-.legenda{
-	font-weight: normal;
-    margin: 2px;
-    text-align: center;
-	width: 117px; /* define o tamanho da área em que será exibida a legenda -
-			se o valor for menor que a quantidade de caracteres, 
-			ocorre uma quebra de linha */
+	height: 100%;
+	width: 100%;
 }
 
-.thumbnails {
-	float: left;
-	margin-right: 1em;
-}
 
-/* Configurando video */
-
-video{
-	height: auto;
-	width: 50%;
-}
-
-figure{
-	display: block;
-	letter-spacing: 0.5em;
-	margin: 20px auto;
-	min-width: 300px;
-	width: 50%;	
-}
-
-figcaption{
-	font: 100% sans-serif; 
-	text-align: center;
-}
-
+/* formatação do movie */
 .movie{
-	
 	background-size: cover; 
 	bottom: 0;
 	min-height: 100%;
 	min-width: 100%; 
 	right: 0; 
-}
-
-/* Configurando tabelas*/	
-header, h2{
-	margin: 20px auto;
-	text-align: center;
-}
-
-
-/* Configurando imagens*/
-div.thumbnail{
-	border: 1px solid #000000;
-    float: left;  /* alinhamento a esquerda */
-    font-family: Arial;
-	font-size: 12px;
-    margin: 2px;
-	max-width: 100%;
-	text-align: center; /* texto da legenda alinhado no centro */  
-}
-
-/* formatação das imagens */
-div.thumbnail img{
- 	border: 1px solid #ffffff;
-    float: none;
- 	margin: 3px;
-}
-
-/* uma borda será exibida quando passar o mouse sobre a imagem */
-div.thumbnail a:hover img {
-	border: 1px solid #809fff;
-}
-
-/* Configurando rodapé */
-footer{
-	color: #ffffff;
-	font-weight: bold;
-	position: relative;	
-	text-align: center;	
 }
 
 /* Configurando alterações*/
@@ -207,12 +128,37 @@ footer{
 }
 
 /* Configurando tamanho da bandeira*/
-.bandeira{
+.flag{
 	cursor: pointer;
 	height: 20px;
 	width: 30px;
 }
 
+/* Configurando Cabeça*lo e h2 */	
+header, h2{
+	margin: 20px auto;
+	text-align: center;
+}
+
+/* Configurando rodapé */
+footer{
+	color: #ffffff;
+	font-weight: bold;
+	position: relative;	
+	text-align: center;	
+}
+
+
+p{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+.alinhamento-central{
+	text-align: center;
+}
+
+/* Formatando Listas */
 .com-bordas dt {
 	background-color: #131210;
 	border-left: 2px solid #131210;
@@ -235,3 +181,72 @@ footer{
 	padding: 1em .5em;
 	text-align: center;	
 }
+
+/* Formatação de videos*/
+
+figure.movie{
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	float: left;
+	padding-bottom: 20px;
+	
+}
+
+
+figure.movie video{
+	height:100%;
+	width: 100%;
+}
+
+figure.movie figcaption{
+	background-color: rgba(0,0,0, 0.4);
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	height: 100%;
+	margin: 3px;
+	text-align: center;
+}
+
+/* Formatação de imagens com legendas */
+figure.foto-legenda{
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	float: left;
+	position: relative;
+}
+
+figure.foto-legenda img{
+	height: auto;
+	width: auto;
+}
+
+figure.foto-legenda figcaption{
+	align-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	font-size: 12px;
+	height: 100%;
+	margin: 3px;
+	opacity: 0;
+	transition: opacity 1s;
+	width: 100%;
+}
+
+/* Formatação do textos dentro figure*/
+figure.foto-legenda p{
+	text-align: center;
+	text-indent: inherit;
+}
+
+h3{
+	text-align: center;
+	text-indent: inherit;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+
