@@ -64,6 +64,8 @@ body{
 
 /* Estilizando imagens*/
 .imagem{
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
 	display: block;
 	height: auto;
 	margin: 2px;
@@ -74,13 +76,14 @@ body{
 }
 /* Configurando galeria*/
 .galeria{
-	
 	float: left;
 	padding: 0.1em;
 }
 
 /* Configurando imagem-galeria */
 .imagem-galeria img{
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
 	height: 120px;
 	margin: 12px;
 	margin-bottom: 5px;
@@ -144,7 +147,7 @@ footer{
 }
 
 
-p{
+.altera p{
 	text-align: justify;
 	text-indent: 50px;
 }
@@ -217,5 +220,3 @@ h3{
 figure.foto-legenda:hover figcaption{
 	opacity: 1;
 }
-
-
