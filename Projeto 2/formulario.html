@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="Viewport" content="witdth=device-width" />
+    <title>Formul&aacute;rio de Lançamentos</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Formul&aacute;rio de Lan&ccedil;amentos</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-2">
+                    <label for="inputDate">Data:</label>
+                    <input type="date" class="form-control" id="inputDate" placeholder="Email">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="inputNumDoc">N&uacute;mero do Documento:</label>
+                    <input type="text" class="form-control" id="inputNumDoc" placeholder="Número do documento">
+                </div>
+            </div><!-- Fim class="form-row" -->
+            <div class="form-row">
+                <div class="form-group col-sm-2">
+                    <label for="inputTipolanc">Tipo de Lan&ccedil;amento</label>
+                    <select id="inputTipolanc" class="form-control">
+                        <option selected>Escolha...</option>
+                        <option>Receita</option>
+                        <option>Despesa</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="inputValor">Valor</label>
+                    <input type="num" class="form-control" id="inputValor" placeholder="Valor">
+                </div>
+
+            </div><!-- Fim class="form-row" -->
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="inputHistor">Hist&oacute;rico de Lan&ccedil;amento</label>
+                    <input type="text" class="form-control" id="inputHistor" placeholder="Histórico de Lançamento">
+                </div>
+            </div><!-- Fim class="form-row" -->
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
