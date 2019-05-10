@@ -2,8 +2,8 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="Viewport" content="witdth=device-width" />
+    <meta charset="utf-8">
+    <meta name="Viewport" content="witdth=device-width">
     <title>Formul&aacute;rio de Lançamentos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
@@ -15,7 +15,7 @@
             <div class="form-row">
                 <div class="form-group col-sm-2">
                     <label for="inputDate">Data:</label>
-                    <input type="date" class="form-control" id="inputDate" placeholder="Email">
+                    <input type="date" class="form-control" id="inputDate">
                 </div>
                 <div class="form-group col-sm-4">
                     <label for="inputNumDoc">N&uacute;mero do Documento:</label>
@@ -32,8 +32,8 @@
                     </select>
                 </div>
                 <div class="form-group col-sm-4">
-                    <label for="inputValor">Valor</label>
-                    <input type="num" class="form-control" id="inputValor" placeholder="Valor">
+                    <label for="inputValor">Valor em R$:</label>
+                    <input type="number" class="form-control" id="inputValor" placeholder="Valor" step="0.01">
                 </div>
 
             </div><!-- Fim class="form-row" -->
@@ -43,10 +43,12 @@
                     <input type="text" class="form-control" id="inputHistor" placeholder="Histórico de Lançamento">
                 </div>
             </div><!-- Fim class="form-row" -->
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="submit" id="btnCad" class="btn btn-primary btn-sm">Cadastrar</button>
+            <button type="submit" id="geraextr" class="btn btn-primary btn-sm" onclick="mostraAlerta()">Gerar Extrato</button>
+
         </form>
     </div>
-
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

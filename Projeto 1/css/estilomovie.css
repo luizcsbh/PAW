@@ -4,219 +4,227 @@
 /* Smartfones e dispositivos de tela pequenas*/
 
 
-@media screen and (min-width:481px){
-	/*Definições de estilos*/
-	
-	
-	.list-action dl {
-	  border-bottom: 1px solid #dddddd;
-	}
-	
-	.list-action dd {
-	  border: 0;
-	}
-	.list-action dd:not(:first-child) {
-	  display: block;
-	}
+@media screen and (min-width:481px) {
+    /*Definições de estilos*/
+
+
+    .list-action dl {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .list-action dd {
+        border: 0;
+    }
+
+    .list-action dd:not(:first-child) {
+        display: block;
+    }
 }
 
-@media screen and (max-width:767px){
-  	/*Definições de estilos*/
+@media screen and (max-width:767px) {
+
+    /*Definições de estilos*/
     .list-responsive {
         display: block;
         position: relative;
         width: 100%;
-     }
+    }
 
-   
-     .list-responsive dl,
-     .list-responsive dd,
-     .list-responsive dt {
+
+    .list-responsive dl,
+    .list-responsive dd,
+    .list-responsive dt {
         display: block;
-     }
+    }
 
-     .list-responsive dd,
-     .list-responsive dt {
+    .list-responsive dd,
+    .list-responsive dt {
         height: 35px;
-     } 
-    
- }
-	
+    }
+
+}
+
 
 /* Configurando o body */
-body{
-	background: url(../imagens/fundo-verde.jpg); /*imagem de fundo*/
-	font-family: "Trebuchet MS", Helvetica, sans-serif;/*fontes para o web site*/
+body {
+    background: url(../imagens/fundo-verde.jpg);
+    /*imagem de fundo*/
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    /*fontes para o web site*/
 }
-		
-.container{
-	background: #e6ffe6;
+
+.container {
+    background: #e6ffe6;
     float: none;
-	margin: 20px auto;
-	padding: 20px;
+    margin: 20px auto;
+    padding: 20px;
     width: auto;
 }
 
 /* Limpa o float tanto direita iu esquerda */
-.clear{
-	clear: both;
+.clear {
+    clear: both;
 }
 
 /* Estilizando imagens*/
-.imagem{
-	border: 8px solid white;
-	box-shadow: 1px 1px 4px black;
-	display: block;
-	height: auto;
-	margin: 2px;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 60%;
-	width: auto;		
+.imagem {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    display: block;
+    height: auto;
+    margin: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    width: auto;
 }
+
 /* Configurando galeria*/
-.galeria{
-	float: left;
-	padding: 0.1em;
+.galeria {
+    float: left;
+    padding: 0.1em;
 }
 
 /* Configurando imagem-galeria */
-.imagem-galeria img{
-	border: 8px solid white;
-	box-shadow: 1px 1px 4px black;
-	height: 120px;
-	margin: 12px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-	margin-top: 5px;
-	width: 190px;		
+.imagem-galeria img {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    height: 120px;
+    margin: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 190px;
 }
 
-
+.imagem-galeria:hover {
+    background-color: #81BEF7;
+}
 
 /* Confiuração de imagem grande*/
-.img-big{
-	height: 100%;
-	width: 100%;
+.img-big {
+    height: 100%;
+    width: 100%;
 }
 
 
 /* formatação do movie */
-.movie{
-	background-size: cover; 
-	bottom: 0;
-	min-height: 100%;
-	min-width: 100%; 
-	right: 0; 
+.movie {
+    background-size: cover;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    right: 0;
 }
 
 /* Configurando alterações*/
-.alt{
-	background: #ffd700;
-	border: 2px solid #ffd700;
-	border-radius: 10px;
-	box-shadow: 1px 1px 2px #ffd700;
-	color: #ffffff;
-	cursor: pointer;
-	display: inline-block;
-	font-weight: bold;
-	letter-spacing: 1px;
-	padding: 3px 10px;
-	text-align: center;
+.alt {
+    background: #ffd700;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #ffd700;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    text-align: center;
 }
 
 /* Configurando tamanho da bandeira*/
-.flag{
-	cursor: pointer;
-	height: 20px;
-	width: 30px;
+.flag {
+    cursor: pointer;
+    height: 20px;
+    width: 30px;
 }
 
-/* Configurando Cabeça*lo e h2 */	
-header, h2{
-	margin: 20px auto;
-	text-align: center;
+/* Configurando Cabeça*lo e h2 */
+header,
+h2 {
+    margin: 20px auto;
+    text-align: center;
 }
 
 /* Configurando rodapé */
-footer{
-	color: #ffffff;
-	font-weight: bold;
-	position: relative;	
-	text-align: center;	
+footer {
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
 }
 
 
-.altera p{
-	text-align: justify;
-	text-indent: 50px;
+.altera p {
+    text-align: justify;
+    text-indent: 50px;
 }
 
-.alinhamento-central{
-	text-align: center;
+.alinhamento-central {
+    text-align: center;
 }
 
 /* Formatando Listas */
 .com-bordas dt {
-	background-color: #131210;
-	border-left: 2px solid #131210;
-	border-right: 2px solid #131210;
-	border-top: 2px solid #131210;
-	color: #959289;
-	font-weight: bold;
-	padding: .5em .5em;
-	text-align: center;
-	text-transform: uppercase;
+    background-color: #131210;
+    border-left: 2px solid #131210;
+    border-right: 2px solid #131210;
+    border-top: 2px solid #131210;
+    color: #959289;
+    font-weight: bold;
+    padding: .5em .5em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .com-bordas dd {
-	background: #DBD8D8;
-	border-bottom: 1px solid #131210;
-	border-left: 1px solid #131210;
-	border-right: 1px solid #131210;
-	font-style: italic;
-	margin: 0 0 1em 0;
-	padding: 1em .5em;
-	text-align: center;	
+    background: #DBD8D8;
+    border-bottom: 1px solid #131210;
+    border-left: 1px solid #131210;
+    border-right: 1px solid #131210;
+    font-style: italic;
+    margin: 0 0 1em 0;
+    padding: 1em .5em;
+    text-align: center;
 }
 
 /* Formatação de imagens com legendas */
-figure.foto-legenda{
-	border: 8px solid white;
-	box-shadow: 1px 1px 4px black;
-	float: left;
-	position: relative;
+figure.foto-legenda {
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    float: left;
+    position: relative;
 }
 
-figure.foto-legenda img{
-	height: auto;
-	width: auto;
+figure.foto-legenda img {
+    height: auto;
+    width: auto;
 }
 
-figure.foto-legenda figcaption{
-	align-content: center;
-	align-items: center;
-	background-color: rgba(0,0,0,0.4);
-	color: white;
-	font-size: 12px;
-	height: 100%;
-	margin: 3px;
-	opacity: 0;
-	transition: opacity 1s;
-	width: 100%;
+figure.foto-legenda figcaption {
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 12px;
+    height: 100%;
+    margin: 3px;
+    opacity: 0;
+    transition: opacity 1s;
+    width: 100%;
 }
 
 /* Formatação do textos dentro figure*/
-figure.foto-legenda p{
-	text-align: center;
-	text-indent: inherit;
+figure.foto-legenda p {
+    text-align: center;
+    text-indent: inherit;
 }
 
-h3{
-	text-align: center;
-	text-indent: inherit;
+h3 {
+    text-align: center;
+    text-indent: inherit;
 }
 
-figure.foto-legenda:hover figcaption{
-	opacity: 1;
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
 }
