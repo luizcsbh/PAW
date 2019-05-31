@@ -29,8 +29,8 @@ function salvar() {
         codigo = $('#codigo'),
         descricao = $('#descricao'),
         valor = $('#valor');
+        codigo.prop('disabled', false);
        
-
         let linhasJson = getLinhasStorage();
 
         if(valor.val().includes(",")){
@@ -70,32 +70,8 @@ function getElementErro(element) {
     return $(document.getElementById(idElement + "Erro"));
 
 }
-function isVazio(element) {
-    let error_element = getElementErro(element)
-    if(element.val().trim() === ""){
-        error_element.get(0).hidden = false;
-        return true
-    }
-    error_element.get(0).hidden = true;
-    return false;
-}
 
-function isNumero(element) {
-    let error_element = getElementErro(element)
-    if(element.val().isNaN){
-        error_element.get(0).hidden = false;
-        return true
-    }
-    error_element.get(0).hidden = true;
-    return false;
-}
 
-function isZero(element) {
-    let error_element = getElementErro(element)
-
-    error_element.get(0).hidden = element.val() !== '0';
-
-}
 function inserStorage(linha) {
     let linhas = localStorage.getItem('linhas');
     let array = [];
@@ -122,7 +98,6 @@ function getLinhasStorage() {
 }
 
 
-
 function showExtratoTela() {
     let linhas = getLinhasStorage(),
         html = "",
@@ -146,9 +121,9 @@ function showExtratoTela() {
             + "<td>" + linha.descricao + "</td>"
             + "<td class="+colorValor+">" + parseFloat(linha.valor).toFixed(2) + "</td>"
             + "<td class="+colorSaldo+">" + saldo.toFixed(2) + "</td>"
-            + "<td><i onclick='updateExtrato("+linha.codigo+")' " +
-            "class=\"far fa-edit\"></i> " +
-            "<i onclick='deleteExtrato("+ linha.codigo+")' class=\"fas fa-trash\"></i></td>"
+            + "<td><i onclick='updateExtrato("+linha.codigo+")' " + 
+            "class=\"far fa-edit\">editar</i> " +
+            "<i onclick='deleteExtrato("+ linha.codigo+")' class=\"fas fa-trash\">apagar</i></td>"
             + "</tr>"
     })
     $("table>tbody").html(html);
@@ -175,6 +150,8 @@ function updateExtrato(codigoInt) {
             }
         }
     }
+    
+    document.querySelector('#submit').click();
 }
 
 function deleteExtrato(codigoInt) {
@@ -189,3 +166,12 @@ function deleteExtrato(codigoInt) {
     mostrarExtrato();
 
 }
+
+
+function recarregarTela(){
+    document.location.reload();
+}
+
+
+
+

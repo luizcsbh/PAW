@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
-<body onload="mostrarExtrato()">
+<body onload="mostrarExtrato() recarregarTela()">
     <div class="container">
         <h1 style="text-align: center">Extrato Bancário</h1>
        
@@ -27,10 +27,11 @@
                             <th scope="col" colspan="2">A&ccedil;&otilde;es</th>
                         </tr>
                     </thead>
+                          
                     <tbody>
                     </tbody>
                 </table>
-               <button class="btn btn-primary" id="" type="submit" data-toggle="modal" data-target="#modalExemplo">Adicionar</button><br>
+               <button class="btn btn-primary" id="submit" type="submit" data-toggle="modal" data-target="#modalExemplo">Submit</button><br>
             </div><!-- Fim da class col -->
         </div><!-- Fim da class row -->
     </div> <!-- Fim da class container -->
