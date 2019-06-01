@@ -1,0 +1,16 @@
+.negativo {
+    color: red;
+}
+
+.positivo {
+    color: blue;
+}
+
+i {
+    padding-right: 10px;
+}
+
+i:hover{
+    color: #0069d9;
+    cursor: pointer;
+}
