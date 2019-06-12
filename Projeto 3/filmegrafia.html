@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Monica Bellucci - Filmegrafia</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+
+<body onload="mostrarExtrato()">
+	<figure>
+		<img class="imagem1 animated bounceInUp" src="imagens/capa.jpg" alt="Monica Bellucci">
+	</figure>
+
+	<header class="centralizar font-texto" id="cabecalho">
+		<h1>Monica Bellucci</h1>
+	</header>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<h2><a class="navbar-brand" href="#">Menu</a></h2>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME <span class="sr-only">(Página atual)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="biografia.html"><i class="fa fa-book fa-fw" aria-hidden="true"></i> BIOGRAFIA</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="#"><i class="fa fa-film" aria-hidden="true"></i> FILMEGRAFIA</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="revistas.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> REVISTAS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-item nav-link" href="contato.html"><i class="fa fa-envelope" aria-hidden="true"></i> CONTATO</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<h1>Filmegrafia</h1>
+	<section id="conteudo">
+		<h2>Filmes</h2>
+		<table class="table table-hover">
+			<thead class="table-dark">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Nome do Filme</th>
+					<th scope="col">Ano</th>
+					<th scope="col">Personagem</th>
+					<th scope="col">A&ccedil;&otilde;es</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+		<button class="btn btn-primary" id="submit" type="submit" data-toggle="modal" data-target="#modalExemplo">Adicionar</button><br>
+	</section> <!-- fim conteudo-->
+	<!-- Modal -->
+	<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<form action="javascript:salvar()"></form>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Adicionar Filmegrafia</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="javascript:salvar()" class="needs-validation" novalidate>
+						<div class="form-row">
+							<div class="col-md-3 mb-3">
+								<label for="codigo">N&uacute;mero</label>
+								<input type="number" class="form-control" id="codigo" placeholder="Número" required>
+								<div class="valid-feedback">
+									Ok!
+								</div>
+								<div class="invalid-feedback">
+									Campo número não pode ficar vazio.
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<label for="nomefilme">Nome do Filme</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="nomefilme" placeholder="Nome do Filme" required>
+									<div class="valid-feedback">
+										Ok!
+									</div>
+									<div class="invalid-feedback">
+										Campo Filme não pode ficar vazio.
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label>Ano</label>
+								<input type="number" class="form-control" id="ano" placeholder="Ano" required>
+								<div class="valid-feedback">
+									Ok!
+								</div>
+								<div class="invalid-feedback">
+									Campo Ano não pode ficar vazio.
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<label>Personagem</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="personagem" placeholder="Personagem" required>
+									<div class="valid-feedback">
+										Ok!
+									</div>
+									<div class="invalid-feedback">
+										Campo Personagem não pode ficar vazio.
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary" id="insert">Adicionar</button>
+					</form>
+				</div>
+
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+					<!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<footer id="rodape">
+		<a target="_blank" href="https://www.facebook.com/MonicaBellucci" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+		<a target="_blank" href="https://www.instagram.com/monicabellucciofficiel" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a target="_blank" href="https://twitter.com/mbelluccinet" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a target="_blank" href="https://www.youtube.com/channel/UCUaF-9YIY5oIf2X6lILFn_Q" title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		<span class="centralizar">Todos os direitos reservados &copy; - 2019</span>
+	</footer>
+	<script src="scripts/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body></html>

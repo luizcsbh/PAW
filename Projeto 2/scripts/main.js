@@ -122,8 +122,8 @@ function showExtratoTela() {
             + "<td class="+colorValor+">" + parseFloat(linha.valor).toFixed(2) + "</td>"
             + "<td class="+colorSaldo+">" + saldo.toFixed(2) + "</td>"
             + "<td><i onclick='updateExtrato("+linha.codigo+")' " + 
-            "class=\"far fa-edit\">editar</i> " +
-            "<i onclick='deleteExtrato("+ linha.codigo+")' class=\"fas fa-trash\">apagar</i></td>"
+            "class=\"fa fa-pencil\"></i> " +
+            "<i onclick='deleteExtrato("+ linha.codigo+")' class=\"fa fa-trash\"></i></td>"
             + "</tr>"
     })
     $("table>tbody").html(html);

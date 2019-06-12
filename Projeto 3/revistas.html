@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang=pt-BR>
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Monica Bellucci - Contato</title>
+	<title>Monica Bellucci - Revistas</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.prefixed.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
 <body>
 	<figure>
-		<img class="imagem1" src="imagens/contato.jpg" alt="Monica Bellucci">
+		<img class="imagem1 animated bounceInUp" src="imagens/capa.jpg" alt="Monica Bellucci">
 	</figure>
 
 	<header class="centralizar font-texto" id="cabecalho">
 		<h1>Monica Bellucci</h1>
 	</header>
+
 	<nav class="navbar navbar-expand-lg navbar-light">
 		<h2><a class="navbar-brand" href="#">Menu</a></h2>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -36,39 +41,54 @@
 					<a class="nav-item nav-link" href="filmegrafia.html"><i class="fa fa-film" aria-hidden="true"></i> FILMEGRAFIA</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-item nav-link" href="revistas.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i> REVISTAS</a>
+					<a class="nav-item nav-link" href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> REVISTAS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-item nav-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> CONTATO</a>
+					<a class="nav-item nav-link" href="contato.html"><i class="fa fa-envelope" aria-hidden="true"></i> CONTATO</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
-
-	<h1>Contato</h1>
+	<h1>Revistas</h1>
 	<section id="conteudo">
-		<h2>Formulário de Contato</h2>
-		<form method="post">
-			<div class="form-group col-md-6 mb-3">
-				<label>Nome</label>
-				<input type="text" class="form-control" name="nome" id="idnome" placeholder="Seu Nome" required>
+		<h2>Campanhas em revistas</h2>
+		<p>Monica Bellucci começou como modelo aos 13 anos de idade. Monica apareceu em campanhas pela Dior, Dolce & Gabbana e Cartier. Ela cobriu muitas revistas ao longo de sua carreira, incluindo Vanity Fair, GQ, Esquire Magazine e ELLE.</p>
+		<p>Aqui você pode encontrar todas as melhores capas de revistas de Monica Bellucci.</p>
+
+		<div class="gallery autoplay items-5">
+			<div id="item-1" class="control-operator"></div>
+			<div id="item-2" class="control-operator"></div>
+			<div id="item-3" class="control-operator"></div>
+			<div id="item-4" class="control-operator"></div>
+			<div id="item-5" class="control-operator"></div>
+
+			<figure class="item">
+				<img class="imagem3" src="imagens/monica-bellucci-magazine-cover-1-696x908.jpg" alt="Revista ELLE">
+			</figure>
+			<figure class="item">
+				<img class="imagem3" src="imagens/monica-bellucci-magazine-cover-2-696x901.jpg" alt="Revista Vanity Fair">
+			</figure>
+			<figure class="item">
+				<img class="imagem3" src="imagens/monica-bellucci-magazine-cover-5-696x940.jpg" alt="Revista Marie Claire">
+			</figure>
+			<figure class="item">
+				<img class="imagem3" src="imagens/monica-bellucci-magazine-cover-6-696x909.jpg" alt="Revista GQ">
+			</figure>
+			<figure class="item">
+				<img class="imagem3" src="imagens/monica-bellucci-magazine-cover-9-696x983.jpg" alt="Revista Prestige">
+			</figure>
+
+			<div class="controls">
+				<a href="#item-1" class="control-button">•</a>
+				<a href="#item-2" class="control-button">•</a>
+				<a href="#item-3" class="control-button">•</a>
+				<a href="#item-4" class="control-button">•</a>
+				<a href="#item-5" class="control-button">•</a>
+
 			</div>
-			<div class="form-group col-md-6 mb-3">
-				<label>Endereço de email</label>
-				<input type="email" class="form-control" name="email" id="idemail1" aria-describedby="emailHelp" placeholder="Seu email" required>
-				<small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-			</div>
-			<div class="form-group col-md-6 mb-3">
-				<label>Titulo</label>
-				<input type="text" class="form-control" name="titulo" id="idtitulo" placeholder="Titulo">
-			</div>
-			<div class="form-group col-md-6 mb-3">
-				<label>Sua menssagem</label>
-				<textarea class="form-control" name="mensagem" id="idmensagem" rows="8"></textarea>
-			</div>
-			<button type="submit" class="btn btn-dark" onclick="Enviar();" value="Enviar">Enviar</button>
-		</form>
+		</div>
 	</section> <!-- fim conteudo-->
+
 	<footer id="rodape">
 		<a target="_blank" href="https://www.facebook.com/MonicaBellucci" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
 		<a target="_blank" href="https://www.instagram.com/monicabellucciofficiel" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
